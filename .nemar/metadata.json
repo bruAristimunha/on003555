@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Dataset of EEG recordings of pediatric patients with epilepsy based on the 10-20 system ",
-  "description": "This dataset contains scalp EEG recordings with high-frequency oscillation (HFO) markings from 30 pediatric patients with focal or generalized epilepsy. The first three hours of sleep EEG were recorded and processed to detect ripple-band (80-250 Hz) oscillations in bipolar channels using an automated, clinically validated HFO detector. Derived data include selected N3 sleep intervals with candidate HFO event annotations, aimed at investigating age-related effects on non-invasive epileptogenicity biomarkers.",
-  "methods_description": "Three hours of sleep EEG were recorded per subject using the 10-20 system. Sleep stages were identified from annotations, and 5-minute intervals from N3 sleep were extracted. Bipolar referencing was applied using nearest-neighbour channel pairs, yielding 52 bipolar channels. An automated, clinically validated HFO detector was used to identify ripple-band (80-250 Hz) oscillations in these intervals.",
+  "description": "Scalp EEG recordings from 30 children and adolescents with focal or generalized epilepsy, acquired with the 10-20 system. The first three hours of sleep EEG were recorded, and 5-minute N3 sleep intervals were extracted and bipolar referenced. An automated, clinically validated detector was used to mark high-frequency oscillations (ripples, 80-250 Hz), which are candidate non-invasive biomarkers of epileptogenicity, so that age effects on ripple rates in pediatric epilepsy can be studied.",
+  "methods_description": "Sleep EEG was recorded for about 3 hours at the beginning of sleep and stored in EDF format. Sleep stages were identified from sleep annotations, and 5-minute intervals were cut from N3 sleep. Bipolar referencing of all nearest-neighbour channels gave 52 bipolar channels. An automated HFO detector produced event markings with associated features for ripples in the 80-250 Hz band.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -30,10 +30,12 @@
       "term": "pediatric"
     },
     {
-      "term": "sleep EEG"
+      "term": "Sleep",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012890"
     },
     {
-      "term": "biomarker"
+      "term": "ripples"
     }
   ],
   "related_identifiers": [
